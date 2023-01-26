@@ -23,7 +23,9 @@ multiStepForm.addEventListener('click', (e) => {
   if (incrementor == null) return;
 
   // console.log(currentStep);
-  const inputs = formSteps[currentStep].querySelectorAll('input');
+
+  // I am actually confused why do I need to spread this, as querySelectorAll returns me a NodeList element.
+  const inputs = [...formSteps[currentStep].querySelectorAll('input')];
   const allValid = inputs.some((input) => input.checkValidity());
   if (allValid) {
     showCurrentStep();
