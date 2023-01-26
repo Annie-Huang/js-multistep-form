@@ -8,7 +8,8 @@ let currentStep = parseInt(
 // console.log(currentStep);
 if (currentStep < 0) {
   currentStep = 0;
-  formSteps[currentStep].classList.add('active');
+  // formSteps[currentStep].classList.add('active');
+  showCurrentStep();
 }
 
 multiStepForm.addEventListener('click', (e) => {
@@ -18,4 +19,11 @@ multiStepForm.addEventListener('click', (e) => {
     currentStep -= 1;
   }
   console.log(currentStep);
+  showCurrentStep();
 });
+
+function showCurrentStep() {
+  formSteps.forEach((step, index) => {
+    step.classList.toggle('active', index === currentStep);
+  });
+}
