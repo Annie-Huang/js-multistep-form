@@ -5,6 +5,7 @@
   padding: 0.5rem;
   max-width: 300px;
   margin: 0 auto;
+  display: none;
 }
 
 .form-group {
@@ -30,4 +31,8 @@
 .step-title {
   margin: 0 0 1rem 0;
   text-align: center;
+}
+
+.card.active {
+  display: block;
 }
