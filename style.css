@@ -5,11 +5,7 @@
   padding: 0.5rem;
   max-width: 300px;
   margin: 0 auto;
-  /*display: none;*/
-  transform: translateX(200%);
-  opacity: 0;
-  transition: 500ms ease-in-out;
-  /*position: absolute;*/
+  display: none;
 }
 
 .form-group {
@@ -38,11 +34,8 @@
 }
 
 .card.active {
-  /*display: block;*/
-  transform: translateX(0);
-  opacity: 1;
+  display: block;
   animation: slide 500ms ease-in-out forwards;
-  /*transition-delay: 500ms;*/
 }
 
 .multi-step-form {
