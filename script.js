@@ -17,9 +17,16 @@ multiStepForm.addEventListener('click', (e) => {
     currentStep += 1;
   } else if (e.target.matches('[data-previous]')) {
     currentStep -= 1;
+  } else {
+    return;
   }
-  console.log(currentStep);
-  showCurrentStep();
+
+  // console.log(currentStep);
+  const inputs = formSteps[currentStep].querySelectorAll('input');
+  const allValid = inputs.some((input) => input.checkValidity());
+  if (allValid) {
+    showCurrentStep();
+  }
 });
 
 function showCurrentStep() {
