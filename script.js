@@ -28,6 +28,7 @@ multiStepForm.addEventListener('click', (e) => {
   const inputs = [...formSteps[currentStep].querySelectorAll('input')];
   const allValid = inputs.some((input) => input.checkValidity());
   if (allValid) {
+    currentStep += incrementor;
     showCurrentStep();
   }
 });
