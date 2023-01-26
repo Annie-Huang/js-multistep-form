@@ -13,13 +13,14 @@ if (currentStep < 0) {
 }
 
 multiStepForm.addEventListener('click', (e) => {
+  let incrementor;
   if (e.target.matches('[data-next]')) {
-    currentStep += 1;
+    incrementor += 1;
   } else if (e.target.matches('[data-previous]')) {
-    currentStep -= 1;
-  } else {
-    return;
+    incrementor -= 1;
   }
+
+  if (incrementor == null) return;
 
   // console.log(currentStep);
   const inputs = formSteps[currentStep].querySelectorAll('input');
