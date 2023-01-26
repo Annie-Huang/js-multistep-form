@@ -5,7 +5,7 @@
   padding: 0.5rem;
   max-width: 300px;
   margin: 0 auto;
-  display: none;
+  animation: fade 500ms 500ms ease-in-out backwards reverse;
 }
 
 .form-group {
@@ -34,7 +34,6 @@
 }
 
 .card.active {
-  display: block;
   animation: slide 500ms ease-in-out forwards;
 }
 
