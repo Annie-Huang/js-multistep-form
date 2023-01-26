@@ -5,7 +5,7 @@ let currentStep = parseInt(
   formSteps.findIndex((step) => step.classList.contains('active'))
 );
 
-console.log(currentStep);
+// console.log(currentStep);
 if (currentStep < 0) {
   currentStep = 0;
   formSteps[currentStep].classList.add('active');
