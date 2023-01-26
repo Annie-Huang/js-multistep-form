@@ -5,7 +5,9 @@
   padding: 0.5rem;
   max-width: 300px;
   margin: 0 auto;
-  display: none;
+  /*display: none;*/
+  transform: translateX(200%);
+  opacity: 0;
 }
 
 .form-group {
@@ -34,5 +36,11 @@
 }
 
 .card.active {
-  display: block;
+  /*display: block;*/
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.multi-step-form {
+  overflow: hidden;
 }
