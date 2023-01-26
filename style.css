@@ -8,6 +8,7 @@
   /*display: none;*/
   transform: translateX(200%);
   opacity: 0;
+  transition: 200ms ease-in-out;
 }
 
 .form-group {
