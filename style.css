@@ -34,7 +34,7 @@
 }
 
 .card.active {
-  /*animation: slide 500ms 500ms ease-in-out forwards;*/
+  animation: slide 500ms 500ms ease-in-out both;
 }
 
 .multi-step-form {
