@@ -26,7 +26,10 @@ multiStepForm.addEventListener('click', (e) => {
 
   // I am actually confused why do I need to spread this, as querySelectorAll returns me a NodeList element.
   const inputs = [...formSteps[currentStep].querySelectorAll('input')];
-  const allValid = inputs.some((input) => input.checkValidity());
+
+  // When a field failed validation, you need to hover in the field to be able to see the default error message in chrome
+  // Need to do it both way, not ideal. But if you only do it for next, not previous, then if there is fail validation in the current page, then user click previous and then next, they will never be able to go back to current page.
+  const allValid = inputs.every((input) => input.checkValidity());
   if (allValid) {
     currentStep += incrementor;
     showCurrentStep();
