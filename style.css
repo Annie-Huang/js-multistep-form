@@ -3,6 +3,8 @@
   border: 1px solid #333;
   border-radius: 0.5rem;
   padding: 0.5rem;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .form-group {
@@ -24,4 +26,8 @@
   border-radius: 0.25em;
   font-size: 1rem;
   padding: 0.25em;
+}
+.step-title {
+  margin: 0 0 1rem 0;
+  text-align: center;
 }
