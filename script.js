@@ -6,4 +6,7 @@ let currentStep = parseInt(
 );
 
 console.log(currentStep);
-// if(isNaN(currentStep))
+if (currentStep < 0) {
+  currentStep = 0;
+  formSteps[currentStep].classList.add('active');
+}
