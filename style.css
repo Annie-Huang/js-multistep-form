@@ -5,7 +5,7 @@
   padding: 0.5rem;
   max-width: 300px;
   margin: 0 auto;
-  animation: fade 500ms ease-in-out forwards;
+  animation: fade 250ms ease-in-out forwards;
 }
 
 .form-group {
@@ -34,12 +34,16 @@
 }
 
 .card.active {
-  animation: slide 500ms 500ms ease-in-out both;
+  animation: slide 250ms 125ms ease-in-out both;
 }
 
 .multi-step-form {
   overflow: hidden;
   position: relative;
+}
+
+.hide {
+  display: none;
 }
 
 @keyframes slide {
